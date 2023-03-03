@@ -1,0 +1,197 @@
+@charset " utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Orbitron:wght@400;500;600;700;800;900&family=Righteous&display=swap");
+* {  margin: 0;  padding: 0;}
+li {  list-style: none;}
+a {  text-decoration: none;  color: inherit;}
+img {  display: block;}
+body {  font: 12px/1.6 arial;  color: #555;}
+
+header{
+  position: sticky; top: 0; height: 50px; background-color: #000; color: #fff;  z-index: 10;
+}
+header nav{
+  display: flex;  position: absolute; right: 100px; 
+}
+header nav div.inputbox{
+  margin-top: 15px;border-bottom: 2px solid #fff;
+}
+header nav div.inputbox input[type=text]{
+  background: none; text-decoration: none; border: none; color: #fff;
+}
+header nav ul#gnb{
+  display: flex; gap: 10px; margin-right: 100px; margin-top: 15px; position: relative;
+}
+header nav ul#gnb li{
+  width: 100px; text-align: center; 
+}
+header nav ul#gnb li:hover div.submenu{
+  display: block;
+}
+header nav ul#gnb li div.submenu{
+  background-color: rgb(0, 0, 0); position: absolute; top: 15px; display: none; color: #fff;padding: 20px 1000px; left: -1000px
+}
+header nav ul#gnb li div.submenu.brand div.brandwrap{
+  display: flex;
+}
+header nav ul#gnb li div.submenu.brand ul li{
+
+}
+header nav ul#gnb li div.submenu ul li{
+  width: 300px; font-size: 12px; 
+}
+header nav ul#gnb li div.submenu ul li:first-child{
+  font-size: 14px; font-weight: 700; margin-bottom: 10px;
+}
+header h1{
+  position: absolute; top: 10px; height: 40px;  left: 100px;
+}
+header h1 img{
+  width: 170px; height: 40px;
+}
+ul#menu{
+  position: fixed; top: 30%; left: 0; margin-top: -100px;z-index: 1;
+}
+ul#menu li a{
+  display: block; width: 200px; height: 60px; font-family: Righteous; font-size: 14px; color: #444; text-align: right; overflow: hidden; box-sizing: border-box; border-top: 1px solid #111; opacity: .8;
+  transition: .5s;
+}
+ul#menu li:hover a{ font-size: 24px; opacity: 1;}
+ul#menu li.on a{ font-size: 24px; opacity: 1;}
+ul#menu li:nth-child(1):hover a{
+  color: #fff; border-color: #fff;
+}
+ul#menu li:nth-child(3):hover a{
+  color: #d677ff; border-color: #d677ff;
+}
+ul#menu li:nth-child(4):hover a{
+  color: #fff; border-color: #fff;
+}
+ul#menu li:nth-child(5):hover a{
+  color: #333; border-color: #333;
+}
+
+ul#menu li:nth-child(1).on a{
+  color: #fff; border-color: #fff;
+}
+ul#menu li:nth-child(3).on a{
+  color: #d677ff; border-color: #d677ff;
+}
+ul#menu li:nth-child(4).on a{
+  color: #fff; border-color: #fff;
+}
+ul#menu li:nth-child(5).on a{
+  color: #333; border-color: #333;
+}
+
+section{
+  width: 100%; height: 100vh; position: relative; background-size: cover;background-position: right center;
+  /* background-attachment 스크롤할때마다 덮어씌우는 듯한 느낌*/
+  background-attachment: fixed; overflow: hidden;
+}
+section:nth-child(1){
+  background-image: url(../img/bn1.png); background-size: 100% 100vh;background-repeat: no-repeat;
+}
+section:nth-child(1) article p{
+  position: absolute; top: 230px; left: 250px; color: #fff;
+}
+section:nth-child(2){
+  background-image: url(../img/bn2.png);background-size: 100% 100vh;background-repeat: no-repeat;
+}
+section:nth-child(2) article p{
+  position: absolute; left: -100px; color: #333; font-size: 27px; font-weight: 700;
+}
+section:nth-child(2) article a{
+  position: absolute; left: 0; top: 50px; color: #333; width: 200px; border: 1px solid #333; text-align: center; padding: 10px 0;
+}
+section:nth-child(3){
+  background-image: url(../img/bn3.png);background-size: cover;background-repeat: no-repeat;
+}
+section:nth-child(3) article p{
+  position: absolute; top: 200px; left: 250px; color:#d677ff; width: 500px;
+}
+section:nth-child(4){
+  background-image: url(../img/bn4.png);background-size: cover; background-position: center; background-repeat: no-repeat;
+}
+section:nth-child(4) article p{
+  position: absolute; top: 200px; left: 600px;
+}
+
+section article{
+  position: absolute; top: 46%; left: 300px; z-index: 1;
+}
+section article h2{
+  position: absolute; top: -230px; left: 400px; width: 300px; font-size: 30px; color: #000;
+}
+section article p{
+  font-family: 'Orbitron'; font-size: 50px; letter-spacing: 2px; line-height: 1; width: 400px; text-align: center;
+}
+section article div.btn{
+  position: absolute; top: 320px; left: 400px; width: 300px; height: 50px; background-color: #000;
+  color: #fff; text-align: center; line-height: 50px;
+}
+section article div.btn:hover{
+  background-color: #fff; border: 1px solid gray;
+  color: #333;
+}
+section article span{
+  font-size: 16px; 
+}
+section article div.swiper{
+  width: 1100px; height: 400px;  position: relative; top: -150px; padding-top: 30px;
+}
+section article div.swiper div.swiper-wrapper div.swiper-slide{
+  width: 300px; height: 370px; 
+}
+section article div.swiper div.swiper-wrapper div.swiper-slide a{
+  font-size: 24px; font-weight: 700;
+}
+section article div.swiper div.swiper-wrapper div.swiper-slide a span{
+  font-size: 15px; font-weight: 100;
+}
+section article div.swiper div.swiper-wrapper div.swiper-slide div.inbox span{
+  background-color: rgba(0, 0, 0, .2); font-size: 12px;  width: 30px;
+  text-align: center; padding:3px; border-radius: 5px; 
+}
+section article div.swiper div.swiper-wrapper div.swiper-slide div.inbox img{
+  width: 250px; height: 250px; margin-left: 25px;
+
+}
+.swiper-pagination {
+  color: #000;
+}
+.swiper-button-prev{
+  position: absolute; left: 0;
+}
+.swiper-button-next{
+  position: absolute; right: 0;
+}
+.swiper-button-prev:after{
+  content: "<";  border: 1px solid gray; font-size: 30px; padding: 0 5px;color:gray;
+}
+.swiper-button-next::after{
+  content: ">"; border: 1px solid gray;font-size: 30px; padding: 0 5px;color:gray;
+}
+
+div.footer_wrap{
+  background-color: #000; width: 100%; color: #777;
+}
+footer{
+  width: 1000px; margin: 0 auto; display: flex; 
+  justify-content: space-evenly; padding-top: 10px;
+  margin-bottom: 30px;
+}
+footer div h3{
+  color: #fff; font-weight: 700; margin-bottom: 10px;
+}
+footer div ul li{
+  line-height: 1.8;
+}
+div.footer{
+  margin-left: 150px;
+}
+div.footer ul.sns{
+  display: flex; gap: 20px; font-size: 20px;
+}
+div.footer div.info{
+  display: flex; gap: 30px;
+}
