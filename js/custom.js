@@ -9,27 +9,7 @@ $(document).ready(function(){
     $('section').height(ht);
   });
 
-  // 마우스의 움직임에 따라 이미지의 위치 반응
-  $('section').mousemove(function(e){
-    // 커서위치
-    let posX = e.pageX;
-    let posY = e.pageY;
-
-    $('img.p11').css({right : 20-(posX/30), bottom : 20-(posY/30)});
-    $('img.p12').css({right : 130-(posX/20), bottom : -40-(posY/20)});
-    $('img.p13').css({right : 60-(posX/20), top : 180-(posY/20)});
-
-    $('img.p21').css({right : -180-(posX/20), bottom : -180-(posY/20)});
-    $('img.p22').css({right : 130+(posX/50), bottom : -40-(posY/50)});
-
-    $('img.p31').css({right : 280-(posX/30), bottom : -30-(posY/30)});
-    $('img.p32').css({right : 110+(posX/20), bottom : -270-(posY/20)});
-    $('img.p33').css({right : -70+(posX/20), top : -130-(posY/20)});
-
-    $('img.p41').css({right : 20-(posX/30), bottom : -120-(posY/30)});
-    $('img.p42').css({right : 0-(posX/20), bottom : -180-(posY/20)});
-
-  });
+  
 
   // 스크롤하기
   $('ul#menu li').click(function(e){
